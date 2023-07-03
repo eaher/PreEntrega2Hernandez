@@ -5,7 +5,6 @@
     font-family: "Roboto";
     background-color: #212529;
     color: white
-
 }
 
 @font-face {
@@ -14,68 +13,73 @@
 }
 
 
-.menu{
-    text-decoration: none;
-    color: white;
-}
+@media (max-width:1200px) {
 
-header{
-
-    height: 10vh;
-}
-main{
-    height: 80vh;
-
-
-}
-
-section{
-height: 70vh;
-
-}
-footer{
-
-height: 10vh;
-display: flex;
-flex-direction: row;
-justify-content: center;
-justify-content: space-between;
-}
-
-.qr{
-
-    padding-right: 10px;
-    margin-right: 10px;
-    align-self: center;
-
-}
-
-.copyr{
-
-font-size: 12px;
-margin-left: 5px;
-padding-left: 5px;
-align-self: self-end;
-
-}
-/*Desktop*/
-
-@media (min-width:1025px){
-
-    .desktop{
+    .mobile {
 
         display: none;
+
     }
+
 
 }
 
 
-.caja{
-    
-    margin: 15px;
-    padding: 10px;
-    box-shadow: 0 0 20px white;
-    border-radius: 10px;
-    margin-top: 60px;
-    align-self: flex-end;
+/*Desktop*/
+@media (min-width:1201px) {
+
+    .desktop {
+        display: none;
+
+    }
+
+
+    .nav__ul {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        padding: 10px;
+        padding-top: 20px;
+        margin: 10px;
+
+        align-items: center;
+
+
+
+    }
+
+    .nav__ul li {
+
+        margin-left: 20px;
+    }
+
+    .nav__ul li a {
+
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+
+    .menu {
+
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .logo {
+
+        margin: 10px;
+        padding: 10px;
+
+    }
+
+    .logo a {
+
+        text-decoration: none;
+        color: white
+    }
+
+
 }
