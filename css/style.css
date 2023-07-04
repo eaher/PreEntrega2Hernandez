@@ -13,6 +13,25 @@
 }
 
 
+
+.main {
+    background-color: #212529;
+}
+
+
+.caja{
+
+
+margin: 10px;
+margin-top: 30px;
+padding: 10px;
+border-radius: 10px;
+box-shadow: 0 0 20px white;
+text-align: center;
+
+
+}
+
 @media (max-width:1200px) {
 
     .mobile {
@@ -20,6 +39,7 @@
         display: none;
 
     }
+
 
 
 }
@@ -30,6 +50,7 @@
 
     .desktop {
         display: none;
+        position: relative;
 
     }
 
@@ -41,7 +62,7 @@
         padding: 10px;
         padding-top: 20px;
         margin: 10px;
-
+        justify-content: center;
         align-items: center;
 
 
@@ -80,6 +101,25 @@
         text-decoration: none;
         color: white
     }
+
+
+    .rrss{
+
+        padding: 10px ;
+        margin-top: 10px;
+        padding-left: 0px;
+    
+
+        
+    }
+
+    .rrss div{
+        padding-left: 100px;
+        margin-left: 40px;
+
+
+    }
+
 
 
 }
