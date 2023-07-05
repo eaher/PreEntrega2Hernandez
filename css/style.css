@@ -13,21 +13,38 @@
 }
 
 
+header{
 
-.main {
-    background-color: #212529;
+    height: 10vh;
 }
 
+main {
+    background-color: #212529;
+    height: 80vh;
+
+}
+
+footer{
+
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+}
 
 .caja{
 
 
 margin: 10px;
-margin-top: 30px;
+margin-top: 50px;
 padding: 10px;
 border-radius: 10px;
-box-shadow: 0 0 20px white;
+box-shadow: 0 0 20px rgb(160, 150, 126);
 text-align: center;
+height: auto;
+width: auto;
 
 
 }
@@ -40,6 +57,11 @@ text-align: center;
 
     }
 
+    footer div div p{
+
+        padding-top: 10px;
+        margin-top: 10px;
+    }
 
 
 }
@@ -121,5 +143,18 @@ text-align: center;
     }
 
 
+
+    .textCopy p{
+
+        padding: 5px;
+        margin: 10px;
+
+    }
+
+
+    .imgAfip{
+        margin-left: 780px;
+
+    }
 
 }
