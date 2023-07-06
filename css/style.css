@@ -1,10 +1,9 @@
-/*Mobile*/
+/* Generales*/
 * {
     padding: 0;
     margin: 0;
     font-family: "Roboto";
-    background-color: #212529;
-    color: white
+    color: rgb(0, 0, 0)
 }
 
 @font-face {
@@ -13,148 +12,280 @@
 }
 
 
-header{
 
+header {
+
+    display: flex;
+    flex-wrap: wrap;
     height: 10vh;
+
+
 }
 
 main {
-    background-color: #212529;
-    height: 80vh;
 
-}
-
-footer{
-
-    height: 10vh;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-
-}
-
-.caja{
-
-
-margin: 10px;
-margin-top: 50px;
-padding: 10px;
-border-radius: 10px;
-box-shadow: 0 0 20px rgb(160, 150, 126);
-text-align: center;
-height: auto;
-width: auto;
+    flex-wrap: wrap;
+    height: 80vh;
+    overflow-y: scroll
 
 
 }
 
-@media (max-width:1200px) {
+footer {
 
-    .mobile {
+    display: flex;
+    flex-wrap: wrap;
+    height: 10vh;
 
-        display: none;
-
-    }
-
-    footer div div p{
-
-        padding-top: 10px;
-        margin-top: 10px;
-    }
 
 
 }
 
+/*Mobile */
 
-/*Desktop*/
-@media (min-width:1201px) {
-
-    .desktop {
-        display: none;
-        position: relative;
-
-    }
+@media(max-width:1023px) {
 
 
-    .nav__ul {
+.mobile{
+
+    display: none;
+}
+
+
+
+    /*header*/
+
+
+
+
+
+    /*Main*/
+
+    .main__mobile{
+
         display: flex;
-        list-style: none;
         flex-direction: row;
-        padding: 10px;
-        padding-top: 20px;
+        align-content: center;
+
+    }
+
+    .cajatxt{
+
+        box-shadow: 0 0 20px black;
         margin: 10px;
+        border-radius: 5px;
+
+    }
+
+    .cajatxt p{
+
+        text-align: center;
+        text-align: justify;
+        padding: 10px;
+        margin: 20px;
+
+    }
+
+    .clientes {
+
+        display: flex;
+        flex-direction: row;
         justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
 
+    }
+
+
+
+
+    .cajaCl {
+
+        width: 250px;
+        background-color: bisque;
+        border-radius: 10px;
+        margin: 20px;
 
 
     }
 
-    .nav__ul li {
+    .cajaCl div img {
 
-        margin-left: 20px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+
     }
 
-    .nav__ul li a {
+    .cajaCl p {
 
-        text-decoration: none;
+        text-align: center;
+
+
+    }
+
+
+    /*footer*/
+
+    .copy {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    .copy p {
+
+        margin: 10px;
+        padding: 5px;
+        font-size: 10px;
+        margin-top: 30px;
         color: white;
-        font-size: 20px;
+
     }
 
+    /*footer qr afip*/
 
-    .menu {
+    .footer {
 
         display: flex;
         flex-direction: row;
-
-    }
-
-    .logo {
-
-        margin: 10px;
-        padding: 10px;
-
-    }
-
-    .logo a {
-
-        text-decoration: none;
-        color: white
+        justify-content: end;
     }
 
 
-    .rrss{
+    .qrAfip {
 
-        padding: 10px ;
+      border-radius: 5px;
+    }
+
+    .qrAfip img {
+
         margin-top: 10px;
-        padding-left: 0px;
+    }
+
+
+}
+
+/*Desktop */
+
+@media(min-width:1024px) {
+
+
+    .desktop{
+    
+        display: none;
+    }
+    
     
 
-        
+/*Main*/
+
+    .cajatxt__desktop{
+
+        box-shadow: 0 0 20px black;
+        margin: 20px;
+        border-radius: 5px;
+
     }
 
-    .rrss div{
-        padding-left: 100px;
-        margin-left: 40px;
+    .cajatxt__desktop p{
+
+        text-align: center;
+        text-align: justify;
+        padding: 10px;
+        margin: 20px;
+
+    }
+
+
+
+    .clientes__desktop {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+
+
+
+    .cajaCl__desktop {
+
+        width: 350px;
+        background-color: bisque;
+        border-radius: 10px;
+        margin: 20px;
+
+
+    }
+
+    .img__desktop{
+
+        width: auto;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+
+
+    }
+
+    .cajaCl__desktop p {
+
+        text-align: center;
 
 
     }
 
 
 
-    .textCopy p{
+    
+    /*footer*/
 
-        padding: 5px;
+    .copy__desktop {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    .copy__desktop p {
+
         margin: 10px;
+        padding: 5px;
+        font-size: 10px;
+        margin-top: 30px;
+        color: white;
 
     }
 
+    /*footer qr afip*/
 
-    .imgAfip{
-        margin-left: 780px;
+    .footer__desktop {
 
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
     }
+
+
+    .qrAfip__desktop {
+
+      border-radius: 5px;
+    }
+
+    .qrAfip__desktop img {
+
+        margin-top: 10px;
+    }
+
 
 }
+
+
+
+
