@@ -28,8 +28,6 @@ main {
     flex-wrap: wrap;
     height: 80vh;
     overflow-y: scroll
-
-
 }
 
 footer {
@@ -42,15 +40,15 @@ footer {
 
 }
 
-/*Mobile */
+/*Mobile******************************************************************/
 
 @media(max-width:1023px) {
 
 
-.mobile{
+    .mobile {
 
-    display: none;
-}
+        display: none;
+    }
 
 
 
@@ -62,7 +60,7 @@ footer {
 
     /*Main*/
 
-    .main__mobile{
+    .main__mobile {
 
         display: flex;
         flex-direction: row;
@@ -70,7 +68,25 @@ footer {
 
     }
 
-    .cajatxt{
+    /*Caja de texto reutilizable sin bordes*/
+    .cajatxt__R {
+        margin: 10px;
+    }
+
+    .cajatxt__R p {
+
+
+        text-align: center;
+        text-align: justify;
+        padding: 10px;
+        margin: 20px;
+
+
+    }
+
+    /* Caja de texto con bordes*/
+
+    .cajatxt {
 
         box-shadow: 0 0 20px black;
         margin: 10px;
@@ -78,7 +94,7 @@ footer {
 
     }
 
-    .cajatxt p{
+    .cajatxt p {
 
         text-align: center;
         text-align: justify;
@@ -86,6 +102,39 @@ footer {
         margin: 20px;
 
     }
+
+    /*Caja de imagen reutilizable */
+
+    .contImgP{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+    }
+    
+    .cajaImgS {
+
+        width: 250px;
+        background-color: bisque;
+        border-radius: 10px;
+        margin: 20px;
+
+
+    }
+
+    .contimgM{
+
+     margin-top: 10px;   
+    width: 100%;
+    border-radius: 10px;
+
+    }
+
+
+    /*Caja de imagen clientes  bordes*/
 
     .clientes {
 
@@ -157,7 +206,7 @@ footer {
 
     .qrAfip {
 
-      border-radius: 5px;
+        border-radius: 5px;
     }
 
     .qrAfip img {
@@ -168,21 +217,41 @@ footer {
 
 }
 
-/*Desktop */
+/*Desktop **************************************************************/
 
 @media(min-width:1024px) {
 
 
-    .desktop{
-    
+    .desktop {
+
         display: none;
     }
-    
-    
 
-/*Main*/
 
-    .cajatxt__desktop{
+
+    /*Main*/
+
+
+/*Caja de texto reutilizable sin bordes*/
+.cajatxt__RD {
+    margin: 10px;
+}
+
+.cajatxt__R p {
+
+
+    text-align: center;
+    text-align: justify;
+    padding: 10px;
+    margin: 20px;
+
+
+}
+
+
+/*Caja de texto reutilizable con bordes*/
+
+    .cajatxt__desktop {
 
         box-shadow: 0 0 20px black;
         margin: 20px;
@@ -190,7 +259,7 @@ footer {
 
     }
 
-    .cajatxt__desktop p{
+    .cajatxt__desktop p {
 
         text-align: center;
         text-align: justify;
@@ -223,7 +292,7 @@ footer {
 
     }
 
-    .img__desktop{
+    .img__desktop {
 
         width: auto;
         width: 100%;
@@ -241,8 +310,38 @@ footer {
     }
 
 
+     /*Caja de imagen reutilizable */
 
+     .contImgD{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+    }
     
+    .cajaImgD {
+
+        width: 250px;
+        background-color: bisque;
+        border-radius: 10px;
+        margin: 20px;
+
+
+    }
+
+    .contimgD{
+
+     margin-top: 10px;   
+    width: 100%;
+    border-radius: 10px;
+    height: 500px;
+
+    }
+
+
     /*footer*/
 
     .copy__desktop {
@@ -275,7 +374,7 @@ footer {
 
     .qrAfip__desktop {
 
-      border-radius: 5px;
+        border-radius: 5px;
     }
 
     .qrAfip__desktop img {
@@ -285,7 +384,3 @@ footer {
 
 
 }
-
-
-
-
