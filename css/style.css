@@ -158,6 +158,18 @@ footer {
 
     }
 
+
+    .cajaClEd {
+
+        width: 250px;
+        background-color: rgb(200, 232, 187);
+        border-radius: 10px;
+        margin: 20px;
+        box-shadow: 0 0 20px grey;
+
+
+    }
+
     .cajaCl div img {
 
         width: 100%;
@@ -166,9 +178,18 @@ footer {
 
     }
 
-    .cajaCl p {
+    .cajaClEd div img {
 
-        text-align: center;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+
+    }
+
+    .cajaClEd p {
+
+        text-align: justify;
+        color: grey;
 
 
     }
@@ -231,8 +252,16 @@ footer {
 
     /*Main*/
 
+.styleEd{
+
+    border-radius: 20px;
+
+}
+
 
 /*Caja de texto reutilizable sin bordes*/
+
+
 .cajatxt__RD {
     margin: 10px;
 }
@@ -292,6 +321,18 @@ footer {
 
     }
 
+
+    .cajaCl__desktopEd {
+
+        width: 350px;
+        background-color: rgba(255, 188, 79, 0.751);
+        border-radius: 10px;
+        margin: 20px;
+        box-shadow: 0 0 20px gold;
+
+
+    }
+
     .img__desktop {
 
         width: auto;
@@ -309,6 +350,20 @@ footer {
 
     }
 
+    .cajaCl__desktopEd p {
+
+        text-align: justify;
+        color: rgb(74, 75, 75);
+
+
+    }
+
+
+    .styleEd{
+
+        border-radius: 20px;
+    
+    }
 
      /*Caja de imagen reutilizable */
 
