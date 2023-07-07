@@ -40,6 +40,13 @@ footer {
 
 }
 
+.form{
+
+    margin-left: 30px;
+
+
+}
+
 /*Mobile******************************************************************/
 
 @media(max-width:1023px) {
@@ -102,6 +109,28 @@ footer {
         margin: 20px;
 
     }
+
+
+
+    .cajatxtEd {
+
+        box-shadow: 0 0 20px grey;
+        margin: 20px;
+        border-radius: 5px;
+        background-color: rgba(137, 43, 226, 0.283);
+
+    }
+
+    .cajatxtEd p {
+
+        text-align: center;
+        text-align: justify;
+        padding: 10px;
+        margin: 20px;
+        color: rgb(95, 94, 94);
+
+    }
+
 
     /*Caja de imagen reutilizable */
 
@@ -297,6 +326,26 @@ footer {
 
     }
 
+    .cajatxt__desktopEd {
+
+        box-shadow: 0 0 20px grey;
+        margin: 20px;
+        border-radius: 5px;
+        background-color: rgba(137, 43, 226, 0.283);
+
+    }
+
+    .cajatxt__desktopEd p {
+
+        text-align: center;
+        text-align: justify;
+        padding: 10px;
+        margin: 20px;
+        color: rgb(95, 94, 94);
+
+    }
+
+    
 
 
     .clientes__desktop {
