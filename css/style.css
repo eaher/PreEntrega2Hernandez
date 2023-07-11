@@ -62,7 +62,11 @@ footer {
     /*header*/
 
 
+    .header__M{
 
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
 
 
     /*Main*/
@@ -72,9 +76,16 @@ footer {
         display: flex;
         flex-direction: row;
         align-content: center;
+        
 
     }
 
+    .form__M{
+
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+    }
     /*Caja de texto reutilizable sin bordes*/
     .cajatxt__R {
         margin: 10px;
