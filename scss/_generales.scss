@@ -39,7 +39,10 @@ nav {
     grid-area: nav;
 }
 
+.fTerciario{
 
+    background-color: map-get($fondo-color , terciario );
+}
 
 main {
     background-color: white;
