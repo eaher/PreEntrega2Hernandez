@@ -39,29 +39,39 @@ nav {
     grid-area: nav;
 }
 
-.fTerciario{
-
-    background-color: map-get($fondo-color , terciario );
-}
 
 main {
-    background-color: white;
+
     grid-area: main;
+
+}
+
+/*Estilo main general*/
+
+.main {
+    background-color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    div {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
 
-        img {
-            width: 100%;
-            height: 250px;
-        }
-    }
 }
 
+/*Contenedor de imagen de main*/
+.main-cont{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+
+.cont-Img{
+
+    width: 100%;
+    height: 250px;
+
+}
 
 
 section {
@@ -141,4 +151,3 @@ footer {
     text-align: justify;
 
 }
-

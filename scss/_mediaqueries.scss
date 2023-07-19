@@ -2,6 +2,14 @@
 
 @media (max-width:991px) {
 
+
+    body {
+
+        height: 100vh;
+        background-color: bla;
+
+    }
+
     header {
 
         display: flex;
@@ -10,19 +18,15 @@
         align-content: center;
         padding: 10px;
 
-        div {
-            height: 100px;
-            width: 200px;
-            margin: 10px;
-            background-image: url(/img/Logo_header.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
+
+
     }
 
+
     nav {
+
         background-color: black;
+
 
         div {
 
@@ -32,27 +36,133 @@
                 height: 50px;
                 width: 50px;
                 border-radius: 25px;
-
             }
-
-
-
-
         }
+    }
 
 
+    /*Estilos main*/
+
+    .mainF {
+
+
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+        
 
 
     }
 
 
+    /*Fondo re utilizable*/
+
+    .fTerciario {
+
+        background-color: map-get($fondo , terciario);
+    }
 
 
-}
+    .fgradiant {
 
-.caja8{
+        background: linear-gradient(to right, #ea90ff, #eaff6a);
 
-   background-color: red
+    }
 
+    /*Cajas */
+
+    /*Caja de texto encabezados*/
+    .cajaT-en {
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 250px;
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    .cajaT-en p{
+
+        margin: 10px;
+        text-align: center;
+        font-size: 20px;
+        font-weight:bold;
+
+    }
+
+    .cajaImgP {
+
+        height: 200px;
+        width: 200px;
+        
+        border-radius: 50%;
+        margin: 20px;
+        box-shadow: 0 0 10px #fac300;
+    }
+
+
+    .cajaImgP img{
+
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+
+    }
+
+    .card {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: none;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .caja__txt {
+
+        @include medidas-caja(600px, 100px);
+        border-radius: 5%;
+        margin: 0;
+        
+    }
+
+    .caja__txt p {
+
+        margin: 10px;
+        text-align: justify;
+        color: rgb(205, 205, 205);
+        
+
+    }
+
+    .contenedor-Card{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+
+
+    }
+
+
+    h2{
+        margin-top: 10px;
+        color: rgb(205, 205, 205);
+
+    }
 
 }
