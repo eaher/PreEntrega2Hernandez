@@ -43,11 +43,13 @@ main {
   flex-wrap: wrap;
 }
 
-.cont-Img {
-  width: 100%;
-  height: 250px;
-}
+/*
+.cont-Img{
 
+    width: 100%;
+    height: 250px;
+
+}*/
 section {
   grid-area: section;
   display: flex;
@@ -427,11 +429,9 @@ footer div a img {
     height: 400px;
   }
   .wspfloat {
-    position: fixed;
-    bottom: 70px;
-    right: 30px;
-    width: 80px;
-    margin-right: 10px;
+    float: right;
+    margin: 10px;
+    margin-bottom: 30px;
   }
   .cont-Img {
     width: 100%;
@@ -551,7 +551,7 @@ footer div a img {
   }
   .cont-Img {
     width: 100%;
-    height: 4px;
+    height: 500px;
   }
   .secCli {
     height: 600px;
