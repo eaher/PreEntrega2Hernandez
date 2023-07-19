@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Roboto";
-  src: url(/fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 * {
   margin: 0;
@@ -95,8 +95,8 @@ footer {
 }
 
 .cir-1 {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   box-shadow: 0 0 12px white;
   margin-top: 20px;
@@ -104,8 +104,8 @@ footer {
 }
 
 .cir-2 {
-  width: 110px;
-  height: 110px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   box-shadow: 0 0 12px white;
   margin-top: 20px;
@@ -113,8 +113,35 @@ footer {
 }
 
 .cir-3 {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  box-shadow: 0 0 12px white;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.cir-4 {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  box-shadow: 0 0 12px white;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.cir-5 {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  box-shadow: 0 0 12px white;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.cir-6 {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   box-shadow: 0 0 12px white;
   margin-top: 20px;
@@ -123,9 +150,11 @@ footer {
 
 .wspfloat {
   position: fixed;
-  bottom: 80px;
+  bottom: 60px;
   right: 20px;
-  width: 40px;
+  width: 30px;
+  margin-bottom: 20px;
+  margin-right: 10px;
 }
 
 footer {
@@ -310,18 +339,18 @@ footer div a img {
   }
   /*Contenedor circulos */
   .cir-1 img {
-    width: 80px;
-    height: 80px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
   }
   .cir-2 img {
-    width: 110px;
-    height: 110px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
   }
   .cir-3 img {
-    width: 140px;
-    height: 140px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
   }
   .cont-cli {
@@ -343,7 +372,6 @@ footer div a img {
     align-items: center;
   }
   .contLab {
-    box-shadow: 0 0 5px #006cfa;
     margin-bottom: 10px;
     margin-top: 20px;
     border-radius: 3%;
@@ -354,12 +382,18 @@ footer div a img {
     margin-top: 10px;
     border-radius: 5%;
   }
-  .boton {
-    width: 80px;
-    border-radius: 10%;
-    background-color: #fac300;
-    color: rgb(114, 105, 105);
-    box-shadow: 0 0 10px black;
+  .btn {
+    background-color: rgb(174, 172, 172);
+    color: white;
+  }
+  .contLab input:hover,
+  .contLab textarea:hover,
+  .hover-bg-color:hover {
+    background: linear-gradient(to right, #eaff6a, #ea90ff);
+  }
+  .btn-custom:hover {
+    background: linear-gradient(to right, #eaff6a, #ea90ff);
+    color: gray;
   }
 }
 /***Desktop***/
@@ -389,18 +423,19 @@ footer div a img {
   }
   /*contenedor multimedia*/
   .con-iframe {
-    width: 400px;
+    width: 600px;
     height: 400px;
   }
   .wspfloat {
     position: fixed;
-    bottom: 80px;
-    right: 0px;
-    width: 60px;
+    bottom: 70px;
+    right: 30px;
+    width: 80px;
+    margin-right: 10px;
   }
   .cont-Img {
     width: 100%;
-    height: 350px;
+    height: 550px;
   }
   .cajaT-en {
     margin-top: 20px;
@@ -434,6 +469,14 @@ footer div a img {
     align-items: center;
     margin-bottom: 20px;
   }
+  .contenedor-Card-var1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+  }
   .cajaImgP {
     height: 300px;
     width: 300px;
@@ -451,11 +494,111 @@ footer div a img {
     height: 100px;
     border-radius: 5%;
     margin: 0;
+    margin-left: 50px;
   }
   .caja__txt p {
     margin: 10px;
     text-align: justify;
     color: rgb(205, 205, 205);
+  }
+  .cir-1 img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+  }
+  .cir-2 img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+  }
+  .cir-3 img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  .cont__card_Desk {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .cont-cli {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px black;
+  }
+  .cajaT-enVar2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 15px white;
+  }
+  .cajaT-enVar2 p {
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .cont-Img {
+    width: 100%;
+    height: 4px;
+  }
+  .secCli {
+    height: 600px;
+  }
+  /* Accionables sobre main*/
+  .main-cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main-var2 {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .var-cajaImg {
+    height: 300px;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .var-cajaImg img {
+    border-radius: 2%;
+    box-shadow: 0 0 10px black;
+  }
+  .cont-Img {
+    width: 100%;
+    height: 350px;
+  }
+  .contLab {
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  /***Formulario*/
+  .contLab input:hover,
+  .contLab textarea:hover,
+  .hover-bg-color:hover {
+    background: linear-gradient(to right, #eaff6a, #ea90ff);
+    /* Cambia el color de fondo de hover aquí */
+  }
+  .btn-custom:hover {
+    background: linear-gradient(to right, #eaff6a, #ea90ff);
+    color: gray;
+  }
+  .btn {
+    background-color: rgb(174, 172, 172);
+    color: white;
   }
 }
 
