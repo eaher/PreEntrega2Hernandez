@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Roboto";
+  src: url(/fonts/Roboto-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "section section section section " "footer footer footer footer";
+}
+
+header {
+  grid-area: header;
+  background-color: purple;
+}
+
+nav {
+  background-color: blue;
+  grid-area: nav;
+}
+
+main {
+  background-color: white;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+main div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main div img {
+  width: 100%;
+  height: 250px;
+}
+
+section {
+  grid-area: section;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+section div {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: brown;
+}
+
+.border-button {
+  border: 2px solid white;
+}
+
+.border-button:hover {
+  border-color: #fac300;
+}
+
+/*Box de contenido de imagenes*/
+.boxImg {
+  height: 200px;
+  width: 200px;
+}
+
+/*Box de contenido de texto*/
+.cajaT1 {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cajaT1 p {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.fTerciario {
+  background-color: rgb(87, 86, 86);
+}
+
+.wspfloat {
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+}
+
+footer {
+  background-color: black;
+  height: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+footer div p {
+  color: white;
+  margin: 0;
+  font-size: 15px;
+}
+footer div a img {
+  height: 70px;
+  width: 50px;
+}
+
+.copy {
+  margin-left: 10px;
+  align-self: center;
+}
+
+.afip {
+  margin-right: 10px;
+  align-self: center;
+  justify-self: end;
+}
+
+/*Mobile*/
+@media (max-width: 991px) {
+  header {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+  }
+  header div {
+    height: 100px;
+    width: 200px;
+    margin: 10px;
+    background-image: url(/img/Logo_header.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  nav {
+    background-color: black;
+  }
+  nav div {
+    /*Dar animación*/
+  }
+  nav div img {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

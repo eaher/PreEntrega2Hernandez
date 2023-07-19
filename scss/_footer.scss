@@ -1,0 +1,48 @@
+.wspfloat {
+
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+
+
+
+}
+
+footer {
+
+    background-color: black;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    div {
+        p {
+            color: white;
+            margin: 0;
+            font-size: 15px;
+        }
+    }
+
+    div {
+        a {
+            img {
+                height: 70px;
+                width: 50px;
+            }
+        }
+    }
+}
+
+.copy{
+
+    margin-left: 10px;
+    align-self: center;
+
+}
+
+.afip{
+
+    margin-right: 10px;
+    align-self: center;
+    justify-self: end;
+
+}

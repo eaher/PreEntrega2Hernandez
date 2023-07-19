@@ -1,0 +1,51 @@
+/*Mobile*/
+
+@media (max-width:991px) {
+
+    header {
+
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-content: center;
+        padding: 10px;
+
+        div {
+            height: 100px;
+            width: 200px;
+            margin: 10px;
+            background-image: url(/img/Logo_header.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    nav {
+        background-color: black;
+
+        div {
+
+            /*Dar animación*/
+            img {
+
+                height: 50px;
+                width: 50px;
+                border-radius: 25px;
+
+            }
+
+
+
+
+        }
+
+
+
+
+    }
+
+
+
+
+}
