@@ -95,33 +95,37 @@ footer {
 }
 
 .cir-1 {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  background-color: red;
+  box-shadow: 0 0 12px white;
   margin-top: 20px;
+  margin-left: 30px;
 }
 
 .cir-2 {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background-color: red;
-  margin-top: 20px;
-}
-
-.cir-3 {
   width: 110px;
   height: 110px;
   border-radius: 50%;
-  background-color: red;
+  box-shadow: 0 0 12px white;
   margin-top: 20px;
+  margin-left: 30px;
+}
+
+.cir-3 {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  box-shadow: 0 0 12px white;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 
 .wspfloat {
   position: fixed;
   bottom: 80px;
-  right: 10px;
+  right: 20px;
+  width: 40px;
 }
 
 footer {
@@ -181,6 +185,18 @@ footer div a img {
     flex-wrap: wrap;
     background-color: white;
   }
+  .mainCli {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    height: 400px;
+  }
+  /*Estilos Section*/
+  .secCli {
+    height: 400px;
+  }
   /*Fondo re utilizable*/
   .fTerciario {
     background-color: rgb(87, 86, 86);
@@ -188,12 +204,35 @@ footer div a img {
   .fgradiant {
     background: linear-gradient(to right, #ea90ff, #eaff6a);
   }
+  .fgradiant2 {
+    background: linear-gradient(to right, white, #fac300);
+  }
   /*Cajas */
   /*Caja de texto encabezados*/
+  .cajaT-enVar2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 15px white;
+  }
+  .cajaT-enVar2 p {
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
   .cajaT-en {
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 250px;
+    height: 350px;
     width: auto;
     margin-left: 20px;
     margin-right: 20px;
@@ -248,10 +287,34 @@ footer div a img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
   }
   h2 {
     margin-top: 10px;
     color: rgb(205, 205, 205);
+  }
+  /*Contenedor circulos */
+  .cir-1 img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  .cir-2 img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+  }
+  .cir-3 img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+  }
+  .cont-cli {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px black;
   }
 }
 
