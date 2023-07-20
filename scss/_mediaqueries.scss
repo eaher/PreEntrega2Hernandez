@@ -6,7 +6,7 @@
     body {
 
         height: 100vh;
-        background-color: bla;
+        
 
     }
 
@@ -69,12 +69,15 @@
     .main-var2 {
 
 
-        height: 800px;
+        height: 900px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 10px;
 
     }
+
+
 
     /*Estilos Section*/
 
@@ -288,6 +291,17 @@
         box-shadow: 0 0 20px black;
 
 
+    }
+
+
+
+    /*Caja imaganes*/
+
+    .var-img{
+
+        
+        border-radius: 5%;
+        width: 100%;
     }
 
     /*Contenedor form*/
@@ -699,6 +713,18 @@
 
     background-color: rgb(174, 172, 172);
     color: white;
+    
 
 }
+
+
+.var-img{
+
+    margin-top: 10px;
+    border-radius: 2%;
+    width: 100%; 
+    height: 400px;
+    box-shadow: 0 0  10px black;
+}
+
 }
