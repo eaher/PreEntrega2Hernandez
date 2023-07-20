@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Contacto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Favicon-->
-    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
     <title>DeliveryPro</title>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,6 +17,8 @@
     <!--Styles-->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta name="Contacto" content="Completa el formulario para contactarte con el equipo que necesites">
+    <meta name="keywords" content="NEGOIO , DELIVERY , CONTACTO , SERVICIOS">
 
 
 </head>
@@ -24,7 +27,8 @@
 
     <header>
 
-        <a href="../index.html"><img  class="animate__animated animate__flipInY"  src="../img/Logo_header.png" height="100"   alt="logo"></a>
+        <a href="../index.html"><img class="animate__animated animate__flipInY" src="../img/Logo_header.png"
+                height="100" alt="logo"></a>
     </header>
     <nav class="navbar  navbar-expand-lg nav " data-bs-theme="dark">
         <div class="container-fluid">
@@ -66,32 +70,46 @@
             </div>
         </div>
     </nav>
-    <main class="main-var2">
 
-            <div class="container">
 
-                <div class="col-12 ">
-                    <img class="var-img"   src="../img/contacto.jpg" ></div>
+    <main>
 
-                <input class="form-control contLab hover-bg-color" type="text" placeholder="Nombre" aria-label="Nombre">
-                <div class="mb-3  contLab">
-                    <label for="exampleFormControlInput1" class="form-label">Email </label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
-                </div>
-                <div class="mb-3 contLab">
-                    <label for="exampleFormControlTextarea1" class="form-label"> Comentarios</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
 
-                <div>
-                    <button type="button" class="btn btn-custom">Enviar</button>
-                </div>
 
-            </div>
+
+        <div class="fgradiant fgradiant ct-mw4">
+
+            <h1>¿Conversamos?</h1>
+
+        </div>
 
 
     </main>
+
+
+    <section class="fgrey">
+
+        <form  method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+
+
+
+
+    </section>
 
 
 
