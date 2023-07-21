@@ -29,6 +29,8 @@ body {
 
 
 
+
+
 header {
     grid-area: header;
     background-color: black;
@@ -36,8 +38,11 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    
 
 }
+
+
 
 nav {
 
@@ -85,6 +90,7 @@ section {
 }
 
 
+
 /***Modificador de tamaño para el section y main*/
 
 /**Cambia height en px*/
@@ -118,7 +124,11 @@ footer {
 
 
 
+
 /****** Contenedores***********/
+
+
+
 
 .conG {
 
@@ -375,9 +385,9 @@ footer {
 
 
 
-/*h1 y p de index*/
+/*h2 y p de index*/
 
-.ct-mw h1 {
+.ct-mw h2 {
 
     margin: 10px;
 
@@ -391,9 +401,9 @@ footer {
 }
 
 
-/*h1 y p de nosotros*/
+/*h2 y p de nosotros*/
 
-.ct-mw2 h1 {
+.ct-mw2 h2 {
 
     margin: 10px;
     text-align: center;
@@ -625,4 +635,11 @@ textarea {
 
 .button:hover {
     background-color: #45a049;
+}
+
+
+button:hover {
+    
+    border-color: #fac300;
+
 }
