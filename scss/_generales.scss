@@ -614,7 +614,7 @@ textarea {
     /* Permite redimensionar verticalmente el campo de comentarios */
 }
 
-button {
+.button {
     background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
@@ -623,6 +623,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     background-color: #45a049;
 }
