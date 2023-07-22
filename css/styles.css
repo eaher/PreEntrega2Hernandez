@@ -99,7 +99,7 @@ footer {
   grid-area: footer;
 }
 
-/****** Contenedores***********/
+/****** Contenedores generales***********/
 .conG {
   display: flex;
   flex-direction: row;
@@ -125,17 +125,36 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: left;
   margin: 20px;
   justify-content: space-between;
+  height: 700px;
+  align-items: center;
 }
 
+/******Contenedor general con img*****/
+.conG-i4 {
+  background-image: url(../img/clientes.jpg);
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.conG-i4 .ct-mw4 {
+  height: 90px;
+  box-shadow: 0 0 20px white;
+}
+
+/**** Ocultan objetos en mobile ****/
 /****Imagen*****/
 /******* para imagenes circulares****/
 /*Del mismo tamaño*/
 .i-circular {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   box-shadow: 0 0 10px #fac300;
   border-radius: 50%;
   margin-top: 10px;
@@ -208,6 +227,19 @@ footer {
   align-items: center;
 }
 
+.c-circular3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #fac300;
+}
+
+.c-circular3 img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
 /*****                 Texto                 *****/
 /*** Contenedores de texto generales***/
 .conGt {
@@ -220,7 +252,8 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: left;
-  margin: 20PX;
+  margin: 20px;
+  margin-bottom: 40px;
 }
 
 /** Contendedores de texto secundarios**/
@@ -253,7 +286,7 @@ footer {
   margin-bottom: 20px;
   margin-top: 30px;
   box-shadow: 0 0 10px white;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,6 +309,7 @@ footer {
 
 .ct-mw2 p {
   margin: 10px;
+  text-align: center;
 }
 
 /*h1 y p de Como lo hacemos*/
@@ -293,6 +327,10 @@ footer {
 .ct-mw4 h1 {
   text-align: center;
   color: rgba(44, 43, 43, 0.637);
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .ct-mw3 {
@@ -344,7 +382,7 @@ footer {
   background-color: grey;
 }
 
-/***** Elementos de prueba*****/
+/***** Elementos de prueba**********************************************************************/
 .contenedorG {
   display: flex;
   flex-direction: row;
@@ -383,7 +421,54 @@ footer {
   margin-bottom: 20px;
 }
 
-/***** hover*****/
+.container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 50px auto;
+  border: 2px solid #333;
+  border-radius: 50%;
+  animation: rotate 10s linear infinite;
+}
+
+.item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+}
+
+.item:nth-child(1) {
+  animation: itemRotate 4s linear infinite;
+}
+
+.item:nth-child(2) {
+  animation: itemRotate 4s linear infinite reverse;
+}
+
+.item:nth-child(3) {
+  animation: itemRotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes itemRotate {
+  from {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+/************************************** hover*************************************/
 .i-circular3:hover {
   animation: heartbeat 1s infinite;
   /* Animación 'heartbeat' que se activa al pasar el mouse por encima */
@@ -403,6 +488,12 @@ footer {
     /* Escala final (vuelve a la escala original) */
   }
 }
+/**** Efecto icono fire en nav bar****/
+.alive {
+  animation: heartbeat 1s infinite;
+}
+
+/*************************************************************/
 /* Estilos para el formulario y los campos */
 form {
   width: 400px;
@@ -410,6 +501,9 @@ form {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-shadow: 0 0 20px white;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 label {
@@ -481,12 +575,15 @@ footer div a img {
   justify-self: end;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .mobile {
     display: none;
   }
 }
 @media (min-width: 992px) {
+  .mobile {
+    display: block;
+  }
   @font-face {
     font-family: "Roboto";
     src: url(../fonts/Roboto-Regular.ttf);
@@ -549,11 +646,12 @@ footer div a img {
   footer {
     grid-area: footer;
   }
-  /****** Contenedores***********/
+  /****** Contenedores Generales ***********/
   /*** oculta objetos*/
   .desk {
     display: none;
   }
+  /**************************************/
   .conG {
     display: flex;
     flex-direction: row;
@@ -576,9 +674,10 @@ footer div a img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
     margin: 20px;
     justify-content: space-between;
+    height: 500px;
+    align-items: center;
   }
   .conG-Ifr {
     width: 700px;
@@ -614,18 +713,40 @@ footer div a img {
     justify-content: center;
     align-items: center;
   }
-  /****Imagen*****/
+  .conG-i2 .ct-mw2 {
+    height: 140px;
+    box-shadow: 0 0 20px white;
+  }
+  .conG-i4 {
+    background-image: url(../img/clientes.jpg);
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .conG-i4 .ct-mw4 {
+    height: 90px;
+    box-shadow: 0 0 20px white;
+  }
+  /**** Contenedores para Imagen*****/
   /******* para imagenes circulares****/
   /*Del mismo tamaño*/
   .i-circular {
-    width: 150px;
-    height: 150px;
-    box-shadow: 0 0 10px #fac300;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 20px #fac300;
     border-radius: 50%;
-    margin-top: 10px;
-    margin-left: 10PX;
-    margin-top: 10PX;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     justify-self: left;
+  }
+  .i-circular img {
+    width: 300px;
+    height: 300px;
   }
   .i-circular2 {
     box-shadow: 0 0 10px #fac300;
@@ -637,8 +758,8 @@ footer div a img {
     box-shadow: 0 0 10px white;
     border-radius: 50%;
     margin-top: 10px;
-    margin-left: 10PX;
-    margin-top: 10PX;
+    margin-left: 10px;
+    margin-top: 10px;
     justify-self: center;
     transition: transform 0.3s ease;
   }
@@ -682,8 +803,19 @@ footer div a img {
     justify-content: center;
     align-items: center;
   }
+  .c-circular3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #fac300;
+  }
+  .c-circular3 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
   /*****                 Texto                 *****/
-  /*** Contenedores de texto generales***/
+  /*** Contenedores Generales de texto ***/
   .conGt {
     display: flex;
     margin: 10xp;
@@ -692,8 +824,8 @@ footer div a img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
-    margin: 20PX;
+    justify-content: center;
+    margin: 20px;
   }
   /*** alinea iconos de rrss*/
   .rrss {
@@ -703,6 +835,7 @@ footer div a img {
     justify-content: center;
   }
   /** Contendedores de texto secundarios**/
+  /* Se utiliza con un max width  por eso lleva el "mw"*/
   .ct-mw {
     border-radius: 7px;
     margin-left: 30px;
@@ -718,10 +851,15 @@ footer div a img {
     height: 100px;
   }
   .ct-mw3 {
-    border-radius: 7px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 1200px;
   }
   .ct-mw4 {
     border-radius: 7px;
@@ -730,7 +868,7 @@ footer div a img {
     margin-bottom: 20px;
     margin-top: 30px;
     box-shadow: 0 0 10px white;
-    height: 80px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -738,6 +876,7 @@ footer div a img {
   /*h1 y p de index*/
   .ct-mw h1 {
     margin: 10px;
+    text-align: center;
   }
   .ct-mw p {
     margin: 10px;
@@ -748,7 +887,7 @@ footer div a img {
     text-align: center;
   }
   .ct-mw2 p {
-    margin: 10px;
+    margin-bottom: 20px;
   }
   /*h1 y p de Como lo hacemos*/
   .ct-mw3 h1 {
@@ -758,6 +897,7 @@ footer div a img {
   }
   .ct-mw3 p {
     margin: 10px;
+    text-align: center;
   }
   /*h1 y Clientes*/
   .ct-mw4 h1 {
@@ -766,10 +906,10 @@ footer div a img {
   }
   .ct-mw3 {
     max-height: 300px;
-    max-width: 600px;
+    max-width: 1000px;
     margin-top: 10px;
-    margin-left: 10PX;
-    margin-top: 10PX;
+    margin-left: 10px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -804,7 +944,7 @@ footer div a img {
   .fgrey {
     background-color: grey;
   }
-  /***** Elementos de prueba*****/
+  /***** Elementos de prueba************************************/
   .contenedorG {
     display: flex;
     flex-direction: row;
@@ -815,7 +955,7 @@ footer div a img {
   }
   .caja {
     max-height: 300px;
-    max-width: 600px;
+    max-width: 1200px;
     background-color: blue;
     margin-top: 10px;
     margin-left: 10PX;
@@ -834,12 +974,17 @@ footer div a img {
     margin-bottom: 10px;
     justify-self: left;
   }
+  .caja1 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
   .caja p {
     color: white;
     margin: 10px;
     margin-bottom: 20px;
   }
-  /***** hover*****/
+  /****************************** hover**********************************************/
   .i-circular3:hover {
     animation: heartbeat 1s infinite;
     /* Animación 'heartbeat' que se activa al pasar el mouse por encima */
@@ -858,13 +1003,16 @@ footer div a img {
       /* Escala final (vuelve a la escala original) */
     }
   }
-  /* Estilos para el formulario y los campos */
+  /* ***********************Estilos para el formulario y los campos ******************************/
   form {
     width: 400px;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-shadow: 0 0 20px white;
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
   label {
     display: block;

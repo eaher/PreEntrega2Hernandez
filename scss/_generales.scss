@@ -38,7 +38,7 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    
+
 
 }
 
@@ -125,7 +125,7 @@ footer {
 
 
 
-/****** Contenedores***********/
+/****** Contenedores generales***********/
 
 
 
@@ -169,12 +169,54 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
     margin: 20px;
     justify-content: space-between;
+    height: 700px;
+    align-items: center;
+    
 
 }
 
+
+
+
+
+
+/******Contenedor general con img*****/
+
+.conG-i4 {
+
+
+    background-image: url(../img/clientes.jpg);
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+
+
+.conG-i4 .ct-mw4 {
+
+    height: 90px;
+    box-shadow: 0 0 20px white;
+
+}
+
+
+
+
+
+
+
+
+
+/**** Ocultan objetos en mobile ****/
 
 
 
@@ -188,7 +230,7 @@ footer {
 
 
 
-    @include cajas(150px, 150px);
+    @include cajas(200px, 200px);
     box-shadow: 0 0 10px #fac300, ;
     border-radius: 50%;
     margin-top: 10px;
@@ -291,7 +333,22 @@ footer {
 
 }
 
+.c-circular3 {
 
+    @include cajas(200px, 200px);
+    border-radius: 50%;
+    box-shadow: 0 0 20px #fac300;
+
+}
+
+
+.c-circular3 img {
+
+    @include cajas(200px, 200px);
+    border-radius: 50%;
+
+
+}
 
 
 
@@ -311,13 +368,17 @@ footer {
 
 
 
+
+
+
 .conGt2 {
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: left;
-    margin: 20PX;
+    margin: 20px;
+    margin-bottom: 40px;
 
 
 
@@ -374,7 +435,7 @@ footer {
     margin-bottom: 20px;
     margin-top: 30px;
     box-shadow: 0 0 10px white;
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -414,6 +475,7 @@ footer {
 .ct-mw2 p {
 
     margin: 10px;
+    text-align: center;
 
 
 }
@@ -443,6 +505,10 @@ footer {
 
     text-align: center;
     color: rgba(44, 43, 43, 0.637);
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 
 }
 
@@ -522,7 +588,7 @@ footer {
 
 
 
-/***** Elementos de prueba*****/
+/***** Elementos de prueba**********************************************************************/
 
 .contenedorG {
 
@@ -573,7 +639,60 @@ footer {
 }
 
 
-/***** hover*****/
+
+
+.container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 50px auto;
+    border: 2px solid #333;
+    border-radius: 50%;
+    animation: rotate 10s linear infinite;
+}
+
+.item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+}
+
+.item:nth-child(1) {
+    animation: itemRotate 4s linear infinite;
+}
+
+.item:nth-child(2) {
+    animation: itemRotate 4s linear infinite reverse;
+}
+
+.item:nth-child(3) {
+    animation: itemRotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes itemRotate {
+    from {
+        transform: rotate(0deg) translateX(100px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+}
+
+/************************************** hover*************************************/
 .i-circular3:hover {
     animation: heartbeat 1s infinite;
     /* Animación 'heartbeat' que se activa al pasar el mouse por encima */
@@ -598,6 +717,17 @@ footer {
 }
 
 
+/**** Efecto icono fire en nav bar****/
+
+.alive{
+
+    animation: heartbeat 1s infinite;
+
+}
+
+
+/*************************************************************/
+
 
 /* Estilos para el formulario y los campos */
 form {
@@ -606,6 +736,9 @@ form {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-shadow: 0 0 20px white;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 label {
@@ -639,7 +772,7 @@ textarea {
 
 
 button:hover {
-    
+
     border-color: #fac300;
 
 }
