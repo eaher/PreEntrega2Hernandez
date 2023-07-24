@@ -173,7 +173,7 @@ footer {
     justify-content: space-between;
     height: 700px;
     align-items: center;
-    
+
 
 }
 
@@ -196,7 +196,7 @@ footer {
     justify-content: center;
     align-items: center;
 
-    
+
 
 }
 
@@ -207,11 +207,6 @@ footer {
     box-shadow: 0 0 20px white;
 
 }
-
-
-
-
-
 
 
 
@@ -719,7 +714,7 @@ footer {
 
 /**** Efecto icono fire en nav bar****/
 
-.alive{
+.alive {
 
     animation: heartbeat 1s infinite;
 
@@ -731,7 +726,7 @@ footer {
 
 /* Estilos para el formulario y los campos */
 form {
-    width: 400px;
+    max-width: 400px;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -739,6 +734,8 @@ form {
     box-shadow: 0 0 20px white;
     margin-bottom: 50px;
     margin-top: 50px;
+
+
 }
 
 label {
@@ -775,4 +772,17 @@ button:hover {
 
     border-color: #fac300;
 
+}
+
+
+/****************Form*************************/
+.form {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }

@@ -496,7 +496,7 @@ footer {
 /*************************************************************/
 /* Estilos para el formulario y los campos */
 form {
-  width: 400px;
+  max-width: 400px;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -539,11 +539,22 @@ button:hover {
   border-color: #fac300;
 }
 
+/****************Form*************************/
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .wspfloat {
   position: fixed;
-  bottom: 60px;
+  bottom: 30px;
   right: 20px;
-  width: 30px;
+  width: 20px;
   margin-bottom: 20px;
   margin-right: 10px;
 }
