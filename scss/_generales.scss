@@ -38,16 +38,23 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-
+    justify-content: center;
+    
 
 }
 
+header .container{
+
+    margin-left: 0px;
+}
 
 
 nav {
 
     grid-area: nav;
     background-color: black;
+
+
 
     div {
 
@@ -61,6 +68,8 @@ nav {
 
 
 }
+
+
 
 
 main {
@@ -209,7 +218,22 @@ footer {
 }
 
 
+/**** Contenedor Iframe****/
 
+.conG-Ifr{
+    display: flex;
+
+    align-items: center;
+
+}
+
+.con-Ifr{
+
+    height: 400px;
+    width: 100%;
+
+
+}
 
 /**** Ocultan objetos en mobile ****/
 
@@ -333,6 +357,8 @@ footer {
     @include cajas(200px, 200px);
     border-radius: 50%;
     box-shadow: 0 0 20px #fac300;
+    justify-content: center;
+    margin-bottom: 10px
 
 }
 
@@ -415,6 +441,7 @@ footer {
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 20px;
+    
 
 
 
@@ -477,6 +504,23 @@ footer {
 
 /*h1 y p de Como lo hacemos*/
 
+
+.ct-mw h1 {
+
+    margin: 10px;
+    text-align: center;
+    color: rgb(87, 86, 86)
+
+}
+
+.ct-mw p {
+
+    margin: 10px;
+    text-align: justify;
+
+
+}
+
 .ct-mw3 h1 {
 
     margin: 10px;
@@ -500,10 +544,7 @@ footer {
 
     text-align: center;
     color: rgba(44, 43, 43, 0.637);
-    margin-right: 60px;
-    margin-left: 60px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding: 10px;
 
 }
 
@@ -636,57 +677,6 @@ footer {
 
 
 
-.container {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    margin: 50px auto;
-    border: 2px solid #333;
-    border-radius: 50%;
-    animation: rotate 10s linear infinite;
-}
-
-.item {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    transform: translate(-50%, -50%);
-}
-
-.item:nth-child(1) {
-    animation: itemRotate 4s linear infinite;
-}
-
-.item:nth-child(2) {
-    animation: itemRotate 4s linear infinite reverse;
-}
-
-.item:nth-child(3) {
-    animation: itemRotate 4s linear infinite;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes itemRotate {
-    from {
-        transform: rotate(0deg) translateX(100px) rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg) translateX(100px) rotate(-360deg);
-    }
-}
-
 /************************************** hover*************************************/
 .i-circular3:hover {
     animation: heartbeat 1s infinite;
@@ -755,24 +745,25 @@ textarea {
 }
 
 .button {
-    background-color: #4CAF50;
+    background-color: #fac300;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.button:hover {
-    background-color: #45a049;
-}
+
 
 
 button:hover {
 
-    border-color: #fac300;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
 
 }
+
 
 
 /****************Form*************************/
@@ -785,4 +776,25 @@ button:hover {
     align-items: center;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+/*** Boton mobile***/
+.btn {
+    
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+
+
+
+.btn:hover {
+
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+
 }
