@@ -179,9 +179,10 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 20px;
-    justify-content: space-between;
-    height: 700px;
+    justify-content: center;
+    height: auto;
     align-items: center;
+    margin:20px;
 
 
 }
@@ -253,8 +254,8 @@ footer {
     box-shadow: 0 0 10px #fac300, ;
     border-radius: 50%;
     margin-top: 10px;
-    margin-left: 10PX;
-    margin-top: 10PX;
+    margin-left: 10px;
+    margin-top: 10px;
     justify-self: left;
 
 
@@ -272,12 +273,14 @@ footer {
 
 
 
-    @include cajas(200px, 200px);
+    @include cajas(100px, 100px);
     box-shadow: 0 0 10px white, ;
     border-radius: 50%;
     margin-top: 10px;
-    margin-left: 10PX;
-    margin-top: 10PX;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     justify-self: center;
     transition: transform 0.3s ease;
 
