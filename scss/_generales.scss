@@ -39,11 +39,11 @@ header {
     flex-direction: row;
     justify-content: center;
     justify-content: center;
-    
+
 
 }
 
-header .container{
+header .container {
 
     margin-left: 0px;
 }
@@ -182,7 +182,7 @@ footer {
     justify-content: center;
     height: auto;
     align-items: center;
-    margin:20px;
+    margin: 20px;
 
 
 }
@@ -221,14 +221,14 @@ footer {
 
 /**** Contenedor Iframe****/
 
-.conG-Ifr{
+.conG-Ifr {
     display: flex;
 
     align-items: center;
 
 }
 
-.con-Ifr{
+.con-Ifr {
 
     height: 400px;
     width: 100%;
@@ -241,6 +241,42 @@ footer {
 
 
 /****Imagen*****/
+
+/***Contenedor con imagen de background***/
+
+/*index*/
+
+.conG-i {
+
+
+    background-image: url(../img/imgindex.png);
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.conG-i h1 {
+
+    color: rgba(0, 0, 0, 0.753);
+    box-shadow: 0 0 5px white;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.486);
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    width: auto;
+    padding: 10px;
+
+
+}
+
+
 
 
 /******* para imagenes circulares****/
@@ -362,7 +398,6 @@ footer {
     box-shadow: 0 0 20px #fac300;
     justify-content: center;
     margin-bottom: 10px
-
 }
 
 
@@ -444,7 +479,7 @@ footer {
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 20px;
-    
+
 
 
 
@@ -513,7 +548,6 @@ footer {
     margin: 10px;
     text-align: center;
     color: rgb(87, 86, 86)
-
 }
 
 .ct-mw p {
@@ -783,7 +817,7 @@ button:hover {
 
 /*** Boton mobile***/
 .btn {
-    
+
     color: white;
     padding: 5px 10px;
     border: none;

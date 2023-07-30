@@ -164,6 +164,31 @@ footer {
 
 /**** Ocultan objetos en mobile ****/
 /****Imagen*****/
+/***Contenedor con imagen de background***/
+/*index*/
+.conG-i {
+  background-image: url(../img/imgindex.png);
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.conG-i h1 {
+  color: rgba(0, 0, 0, 0.753);
+  box-shadow: 0 0 5px white;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.486);
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  width: auto;
+  padding: 10px;
+}
+
 /******* para imagenes circulares****/
 /*Del mismo tamaño*/
 .i-circular {
@@ -549,6 +574,11 @@ button:hover {
   width: 20px;
   margin-bottom: 60px;
   margin-right: 20px;
+}
+
+.wspfloat a img {
+  width: 50px;
+  height: 50px;
 }
 
 footer {
